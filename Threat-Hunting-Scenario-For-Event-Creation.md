@@ -73,23 +73,40 @@ DeviceFileEvents
 ---
 
 ## Created By:
-- **Author Name**: Josh Madakor
-- **Author Contact**: https://www.linkedin.com/in/joshmadakor/
-- **Date**: August 31, 2024
+- **Author Name**: Hamad Bdeir
+- **Author Contact**: https://www.linkedin.com/in/hamad-bdeir/
+- **Date**: July 10, 2025
 
 ## Validated By:
-- **Reviewer Name**: 
-- **Reviewer Contact**: 
-- **Validation Date**: 
+- **Reviewer Name**: Internal SOC Team
+- **Reviewer Contact**: soc-team@gmail.com
+- **Validation Date**: July 11, 2025
 
 ---
 
 ## Additional Notes:
 - **None**
+Environment Details:
+This scenario was performed on a local VirtualBox Windows 11 VM with Sysmon installed for enhanced visibility.
+
+Limitations:
+This simulation does not include domain-joined environments or real-world endpoint security integrations; results may vary in enterprise settings.
+
+Logs Retention:
+Ensure logs are retained for at least 30 days to enable effective hunting and correlation.
+
+Defender for Endpoint:
+This scenario assumes access to Microsoft Defender for Endpoint Advanced Hunting. Queries may require adjustment for other SIEM platforms.
+
+Data Sanitization:
+All test activities were conducted in a safe, isolated environment and no real illicit content or markets were accessed.
+
+Improvements:
+Future iterations can include detection of TOR obfuscation techniques and integration with threat intelligence feeds.
 
 ---
 
 ## Revision History:
 | **Version** | **Changes**                   | **Date**         | **Modified By**   |
 |-------------|-------------------------------|------------------|-------------------|
-| 1.0         | Initial draft                  | `September  6, 2024`  | `Josh Madakor`   
+| 1.0         | Initial draft                  | `July  10, 2025`  | `Hamad Bdeir`   
