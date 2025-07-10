@@ -43,7 +43,6 @@ DeviceFileEvents
 | where FileName startswith "tor"
 
 // TOR Browser being silently installed
-// Take note of two spaces before the /S (I don't know why)
 DeviceProcessEvents
 | where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe  /S"
 | project Timestamp, DeviceName, ActionType, FileName, ProcessCommandLine
@@ -85,23 +84,22 @@ DeviceFileEvents
 ---
 
 ## Additional Notes:
-- **None**
-Environment Details:
+- Environment Details:
 This scenario was performed on a local VirtualBox Windows 11 VM with Sysmon installed for enhanced visibility.
 
-Limitations:
+- Limitations:
 This simulation does not include domain-joined environments or real-world endpoint security integrations; results may vary in enterprise settings.
 
-Logs Retention:
+- Logs Retention:
 Ensure logs are retained for at least 30 days to enable effective hunting and correlation.
 
-Defender for Endpoint:
+- Defender for Endpoint:
 This scenario assumes access to Microsoft Defender for Endpoint Advanced Hunting. Queries may require adjustment for other SIEM platforms.
 
-Data Sanitization:
+- Data Sanitization:
 All test activities were conducted in a safe, isolated environment and no real illicit content or markets were accessed.
 
-Improvements:
+- Improvements:
 Future iterations can include detection of TOR obfuscation techniques and integration with threat intelligence feeds.
 
 ---
